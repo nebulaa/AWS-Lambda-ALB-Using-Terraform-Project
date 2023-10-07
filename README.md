@@ -36,18 +36,6 @@ Before you begin, ensure you have the following prerequisites:
 
    Confirm the changes when prompted.
 
-7. Once the Terraform apply process is complete, the AWS resources (Lambda function and Application Load Balancer) will be provisioned. The URL of the Application Load Balancer will be displayed in the Terraform output.
-
-8. Update your Slack webhook URL with the one provided in the Terraform output.
-
-9. To destroy the infrastructure when you're done, run:
-
-   ```bash
-   terraform destroy
-   ```
-
-   Confirm the destruction when prompted.
-
 ## Outputs
 
 The `output.tf` file is configured to output the URL of the Application Load Balancer. This URL is where your Lambda function will be accessible.
