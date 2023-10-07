@@ -12,16 +12,11 @@ Before you begin, ensure you have the following prerequisites:
 
 ## Setup Instructions
 
-1. Clone the repository to your local machine:
+1. Clone the repository to your local machine.
 
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-   ```
+2. Modify the `providers.tf` file to configure your AWS provider.
 
-2. Modify the `providers.tf` file to configure your AWS provider. Update the `access_key` and `secret_key` with your AWS IAM user's access and secret keys.
-
-3. Edit the `vpc.tf` file if needed to customize your Virtual Private Cloud (VPC) settings.
+3. Edit the `vpc.tf` file if needed to customize your AWS Virtual Private Cloud (VPC) settings.
 
 4. Customize the Lambda function in `lambda-demo.py` as needed for your use case. This script is responsible for sending requests to the Slack channel via webhook.
 
